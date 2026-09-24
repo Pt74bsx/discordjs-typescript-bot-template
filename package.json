@@ -1,6 +1,6 @@
 {
   "name": "discordjs-typescript-bot-template",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Production-oriented Discord.js + TypeScript bot template with modular commands, automatic discovery, strict tooling, tests, CI/CD and security.",
   "main": "dist/index.js",
