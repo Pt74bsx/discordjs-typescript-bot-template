@@ -1,0 +1,59 @@
+{
+  "name": "discordjs-typescript-bot-template",
+  "version": "4.0.0",
+  "private": true,
+  "description": "Production-oriented Discord.js + TypeScript bot template with modular commands, automatic discovery, strict tooling, tests, CI/CD and security.",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "PT74BSX (Romain-Augusto)",
+    "url": "https://github.com/Pt74bsx"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "discordjs",
+    "discord-js",
+    "typescript",
+    "discord-bot-template",
+    "discordjs-template",
+    "bot-template",
+    "discordjs-typescript",
+    "slash-commands"
+  ],
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "dev:watch": "tsx watch src/index.ts",
+    "deploy": "tsx src/deploy.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "verify": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0",
+    "dotenv": "16.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.15.30",
+    "@vitest/coverage-v8": "5.0.1",
+    "eslint": "10.11.0",
+    "prettier": "3.9.9",
+    "tsx": "4.20.5",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "vitest": "5.0.1"
+  }
+}
