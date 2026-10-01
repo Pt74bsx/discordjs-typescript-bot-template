@@ -22,8 +22,8 @@ jobs:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
       - name: Initialiser CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4
         with:
           languages: javascript-typescript
       - name: Analyser
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4
