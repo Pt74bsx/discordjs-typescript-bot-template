@@ -49,7 +49,7 @@
     "@eslint/js": "10.0.1",
     "@types/node": "22.15.30",
     "@vitest/coverage-v8": "5.0.1",
-    "eslint": "10.11.0",
+    "eslint": "10.12.0",
     "prettier": "3.9.9",
     "tsx": "4.20.5",
     "typescript": "5.9.3",
